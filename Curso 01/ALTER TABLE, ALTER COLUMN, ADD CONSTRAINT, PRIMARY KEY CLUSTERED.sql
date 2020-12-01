@@ -2,8 +2,8 @@ ALTER TABLE [TABELA DE PRODUTOS]
 ALTER COLUMN [CODIGO DO PRODUTO] VARCHAR(10) NOT NULL -- alteramos o campo CODIGO DO PRODUTO da tabela para que ele não aceite nulos
 
 ALTER TABLE [dbo].[TABELA DE PRODUTOS]  -- comando ALTER para alterar a estrutura da tabela
-ADD CONSTRAINT PK_PRODUTOS -- comando CONSTRAINT indica ao SQL uma chave primária ou estrangeira
-PRIMARY KEY CLUSTERED ([CODIGO DO PRODUTO])-- indica ao SQL que de CONSTRAINT queremos adicionar.
+ADD CONSTRAINT PK_PRODUTOS -- comando CONSTRAINT indica ao SQL uma chave primária ou estrangeira, no caso a CONSTRAIN é PK_PRODUTOS
+PRIMARY KEY CLUSTERED ([CODIGO DO PRODUTO])-- indica ao SQL qualo tipo de CONSTRAINT queremos adicionar.
 
 ALTER TABLE [dbo].[TABELA DE VENDEDORES]
 ALTER COLUMN [MATRICULA] VARCHAR(5) NOT NULL
