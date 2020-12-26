@@ -1,0 +1,15 @@
+SELECT * FROM [TABELA DE PRODUTOS]
+
+SELECT * FROM [TABELA DE PRODUTOS] WHERE [NOME DO PRODUTO] LIKE '%Litros%'
+
+SELECT * FROM [TABELA DE PRODUTOS] WHERE [NOME DO PRODUTO] LIKE 'Litros%'
+
+SELECT * FROM [TABELA DE PRODUTOS] WHERE [NOME DO PRODUTO] LIKE 'Linha%'
+
+SELECT * FROM [TABELA DE PRODUTOS] WHERE [NOME DO PRODUTO] LIKE '%Litros%' AND [SABOR] = 'Laranja'
+
+--LIKE serve para buscar especificamente partes de um string.
+
+SELECT * FROM [TABELA DE CLIENTES] WHERE NOME LIKE '%Carvalho' -- o % representa qualquer registro genérico, é equivalente ao * do SELECT
+
+SELECT * FROM [TABELA DE CLIENTES] WHERE NOME LIKE '%Mattos'
