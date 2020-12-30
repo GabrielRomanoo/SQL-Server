@@ -1,5 +1,5 @@
 
-
+SELECT 2
 
 SELECT LTRIM('      OLA')
 
@@ -28,6 +28,15 @@ SELECT LEN('RUA AUGUSTA')
 SELECT * FROM [TABELA DE CLIENTES]
 
 SELECT CONCAT(NOME, ' (', CPF, ') ') FROM [TABELA DE CLIENTES]
+
+-- Faça uma consulta que lista o nome do cliente e o endereço completo (com rua, bairro, cidade e estado).
+
+SELECT CONCAT(
+	'NOME: ', NOME,
+	', ENDEREÇO: ', [ENDERECO 1],
+	' ', [BAIRRO],
+	' ', [CIDADE],
+	' ', [ESTADO]) FROM [TABELA DE CLIENTES]
 
 
 
