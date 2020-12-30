@@ -1,0 +1,21 @@
+-- Temos o CAST e o CONVERT
+
+-- CAST é universal para os sql's
+
+-- CONVERT é especifico do SQL SERVER
+
+SELECT CONVERT(VARCHAR, GETDATE(), 101)
+
+SELECT CONVERT(VARCHAR, GETDATE(), 113)
+
+SELECT CONVERT(VARCHAR, GETDATE(), 130)
+
+SELECT CONVERT(decimal(10,5), 193.57)
+
+SELECT * FROM [TABELA DE PRODUTOS]
+
+SELECT 'O preço do produto ' + [NOME DO PRODUTO] + ' é ' +  [PREÇO DE LISTA] 
+from [TABELA DE PRODUTOS]
+
+SELECT 'O preço do produto ' + [NOME DO PRODUTO] + ' é ' +  CONVERT(VARCHAR, [PREÇO DE LISTA]) 
+from [TABELA DE PRODUTOS]
