@@ -20,3 +20,10 @@ SELECT * FROM CLIENTES WHERE CPF = '19290992743'
 UPDATE [CLIENTES] SET ENDEREÇO = 'R. Jorge Emilio 23', BAIRRO = 'Santo Amaro', CIDADE = 'São Paulo', ESTADO = 'SP', CEP = '8833223'
 WHERE CPF = '19290992743'
 
+-- Altere o volume de compra em 20% dos clientes do estado do Rio de Janeiro.
+
+SELECT * FROM CLIENTES WHERE ESTADO = 'RJ'
+
+UPDATE CLIENTES SET [VOLUME DE COMPRA] = [VOLUME DE COMPRA] * 1.20 
+WHERE ESTADO = 'RJ'
+
